@@ -1,0 +1,117 @@
+* {
+  font-family: "roboto", Arial;
+}
+:root {
+  --main-color: #f5f5dc;
+  --second-color: #3d5a6c;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--main-color);
+}
+.landing-page {
+  background-color: var(--main-color);
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+.logo > img {
+  width: 400px;
+}
+button,
+.answer-btn {
+  background-color: var(--second-color);
+  color: var(--main-color);
+  border: 0;
+  border: 4px solid var(--main-color);
+  border-radius: 15px;
+  padding: 6px 20px;
+  cursor: pointer;
+  transition: all 100ms ease-in-out;
+  font-size: 1.2rem;
+}
+.btn {
+  font-size: 2rem;
+}
+button:hover,
+.answer-btn:hover {
+  background-color: var(--main-color);
+  color: var(--second-color);
+  border: 4px solid var(--second-color);
+}
+.wait {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  gap: 3rem;
+  text-align: center;
+  height: 100dvh;
+}
+.wait > span {
+  font-size: 2rem;
+}
+.main-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 100dvh;
+  margin: 0 10%;
+  gap: 20px;
+}
+.quiz-item {
+  border: 4px solid var(--second-color);
+  padding: 10px 20px;
+}
+.question {
+  margin: 20px 0;
+  font-size: 1.4rem;
+}
+.answers {
+  display: flex;
+  flex-wrap: wrap;
+}
+.answers > div {
+  text-align: center;
+}
+.clicked,
+.clicked:hover {
+  background-color: grey;
+  color: var(--main-color);
+  border: 4px solid var(--main-color);
+}
+.correct {
+  background-color: green;
+}
+.wrong {
+  background-color: red;
+}
+nav {
+  background-color: var(--second-color);
+  padding: 30px 40px;
+  margin-bottom: 60px;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  cursor: pointer;
+  width: fit-content;
+}
+.navbar > div {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: var(--main-color);
+}
+.btns {
+  margin-bottom: 20px;
+}
+.btns > button {
+  width: 100%;
+  margin-bottom: 10px;
+}
